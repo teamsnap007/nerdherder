@@ -21,7 +21,7 @@ or visit: https://api.github.com/users/peteralcock/events/public
 
 -----------
 
-## About
+## Getting Started
 
 Create an email marketing plan for particular group on GitHub, collect addresses fromepository you want, 
 and then send email content to those email addresses.
@@ -44,7 +44,7 @@ SendGrid is only one email provider at current progress.
 #### A. Using Command
 
 ```bash
-$ ge-explore --repo yuecen/github-email-explorer --action_type star fork watch
+$ ge-explore --repo peteralcock/nerdherder --action_type star fork watch
  
 John (john2) <John@example.org>; Peter James (pjames) <James@example.org>;
 ```
@@ -77,14 +77,14 @@ for ge in ges:
 $ python examples/get_email.py
 
 0john123 -> P.J. John, john@example.org
-pjames56 -> Peter James, james@example.org
+palcock -> Peter Alcock, me@peteralcock.com
 ```
 
 You can find get_email.py in *examples* folder.
 
-### How to Send a Email to GitHub Users from a Particular Repository?
+### How to Send Recruiting Emails
 
-#### 1. Write Email Content with Template Format
+#### 1. Writing Content with Templates
 
 The [Jinja2] is used to render email content and basic template [expressions] make email content more flexible for personal information.
 
