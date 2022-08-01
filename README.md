@@ -1,7 +1,11 @@
 # NerdHerder
-Automated technical candidate prospect communication and lead generation
+Automated technical candidate prospect communication and lead generation!
 
------------
+Create an email marketing plan for particular group on GitHub, collect addresses fromepository you want, 
+and then send recruiter email marketing content to those email addresses.
+
+
+### Background
 
 Millions of GitHub commit emails "leaked"
 
@@ -18,13 +22,6 @@ ghmail peteralcock
 
 or visit: https://api.github.com/users/peteralcock/events/public
 
-
------------
-
-## Getting Started
-
-Create an email marketing plan for particular group on GitHub, collect addresses fromepository you want, 
-and then send email content to those email addresses.
 
 ### Installation
 
