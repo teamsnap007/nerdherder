@@ -1,6 +1,27 @@
 # NerdHerder
 Automated technical candidate prospect communication and lead generation
 
+-----------
+
+Millions of GitHub commit emails "leaked"
+
+https://github.com/cirosantilli/all-github-commit-emails extracted from GitHub Archives https://www.githubarchive.org exports commit.
+
+GitHub Archive gets data from GitHub's events API: https://developer.github.com/v3/activity/events/types/#pushevent and exports it to Google BigQuery hourly which makes it easier to query.
+
+Emails used to be shown on events of type PushEvent, but they stopped after I did this.
+
+I don't think commit emails show anywhere on GitHub's web interface (except the email you set in your GitHub profile, and that only shows for logged in users as of 2022), so any collection is limited by the API rate limiting. TODO: how much time to collect 1M emails via API from scratch.
+
+Practical way to get someone's commit email with the API
+
+ghmail() { curl "https://api.github.com/users/$1/events/public" | grep email; }
+ghmail cirosantilli
+or visit: https://api.github.com/users/cirosantilli/events/public
+
+
+-----------
+
 ## Updating Data
 
 Retroactively change the author name, email etc. BEWARE that doing the following can corrupt your history.
