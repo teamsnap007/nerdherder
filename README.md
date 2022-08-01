@@ -2,12 +2,6 @@
 Automated technical candidate prospect communication and lead generation
 
 
-## Bulk Data Collection
-
-Getting All GitHub Commit Emails:
-
-5.8 million unique GitHub commit emails (git config user.email) extracted from https://www.githubarchive.org from 2011-02-12 to 2015-12-31.
-
 ## Loading Candidate Data
 
 Getting the commit email of a particular user is trivial through the API as explained at: http://stackoverflow.com/a/32456486/895245
